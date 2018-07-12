@@ -5,6 +5,7 @@ class DynamicProgramming
   def initialize
     @blair_cache = { 1 => 1, 2 => 2 }
     @frog_cache =  {1 => [[1]], 2 => [[2],[1,1]], 3 => [[3],[2,1],[1,2],[1,1,1,]]}
+    @super_frog_cache =  {1 => [[1]], 2 => [[2],[1,1]], 3 => [[3],[2,1],[1,2],[1,1,1,]]}
   end
 
   def blair_nums(n)
@@ -45,7 +46,8 @@ class DynamicProgramming
   end
 
   def super_frog_hops(n, k)
-
+    puts n
+    puts k
   end
 
   def knapsack(weights, values, capacity)
